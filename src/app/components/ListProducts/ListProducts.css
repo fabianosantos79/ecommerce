@@ -1,0 +1,8 @@
+.botao-adicionar {
+  display: none;
+}
+
+.card:hover .botao-adicionar {
+  display: block;
+  animation: 5s ease-in-out;
+}

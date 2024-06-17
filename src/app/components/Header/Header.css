@@ -1,0 +1,21 @@
+.div-container {
+  background-image: url("../../../../public/testeira.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: scale-down;
+}
+.fundo {
+  background-color: #ffeb00;
+}
+
+.logo {
+  background-image: url("../../../../public/logo_ecommerce.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.fundo-amarelo {
+  background-color: #feba16;
+}
