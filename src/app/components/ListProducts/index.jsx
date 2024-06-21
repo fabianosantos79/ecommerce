@@ -12,7 +12,7 @@ const ListProducts = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetchProduct('parafuso').then(response => setProducts(response))
+        fetchProduct('iphone').then(response => setProducts(response))
     }, [products])
     console.log(products)
     return (
