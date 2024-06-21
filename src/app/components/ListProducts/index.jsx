@@ -12,9 +12,8 @@ const ListProducts = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetchProduct('iphone').then(response => setProducts(response))
+        fetchProduct('smartphone').then(response => setProducts(response))
     }, [products])
-    console.log(products)
     return (
         <section className="container max-w-screen-xl w-full px-28 pt-6 flex flex-wrap gap-6">
             {products.map(product =>
