@@ -1,11 +1,10 @@
-import React from 'react'
 import FormSearch from '../FormSearch'
 import { PiShoppingCartDuotone } from "react-icons/pi";
 import './Header.css'
 import { Button } from '@/components/ui/button';
 
-
 const Header = () => {
+
     return (
         <header className='w-full fundo flex flex-col'>
             <div className='container text-white flex items-center fundo-amarelo justify-evenly'>

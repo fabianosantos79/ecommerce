@@ -1,0 +1,14 @@
+.icone-loading {
+  width: 100%;
+  animation: load-spin 1s linear infinite;
+  margin: 15px auto;
+}
+
+@keyframes load-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

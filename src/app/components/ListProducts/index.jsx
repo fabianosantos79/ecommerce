@@ -5,15 +5,19 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardTitle } from "@/components/ui/card";
 import { FaCartPlus } from "react-icons/fa";
 import "./ListProducts.css"
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
+import AppContext from "../context/AppContext";
 
 
 const ListProducts = () => {
-    const [products, setProducts] = useState([]);
+    const { products, setProducts } = useContext(AppContext);
+    //const [loadingSpin, setLoadSpin] = useState(false);
 
     useEffect(() => {
-        fetchProduct('smartphone').then(response => setProducts(response))
-    }, [products])
+        fetchProduct('eletrodomesticos')
+            .then(response => setProducts(response))
+    }, [])
+
     return (
         <section className="container max-w-screen-xl w-full px-28 pt-6 flex flex-wrap gap-6">
             {products.map(product =>
