@@ -7,16 +7,18 @@ import fetchProduct from '@/app/api/fetchProducts';
 import AppContext from '../context/AppContext';
 
 const FormSearch = () => {
-    const { setProducts } = useContext(AppContext);
+    const { setProducts, setLoadSpin } = useContext(AppContext);
     const [searchValue, setSearchValue] = useState("");
 
     const handleInput = async (event) => {
         event.preventDefault();
-
+        setLoadSpin(true);
         const products = await fetchProduct(searchValue);
 
         setProducts(products);
+        setLoadSpin(false);
         setSearchValue("");
+
     }
 
     return (

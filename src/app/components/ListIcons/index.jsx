@@ -16,11 +16,13 @@ import AppContext from "../context/AppContext";
 
 const ListIcons = () => {
 
-    const { setProducts } = useContext(AppContext);
+    const { setProducts, setLoadSpin } = useContext(AppContext);
 
     const clicou = async (search) => {
+        setLoadSpin(true);
         const productsIcons = await fetchProduct(search);
         setProducts(productsIcons);
+        setLoadSpin(false);
     }
 
     return (

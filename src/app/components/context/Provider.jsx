@@ -4,10 +4,13 @@ import AppContext from './AppContext'
 
 const Provider = ({ children }) => {
     const [products, setProducts] = useState([]);
+    const [loadingSpin, setLoadSpin] = useState(true);
 
     const value = {
         products,
-        setProducts
+        setProducts,
+        loadingSpin,
+        setLoadSpin
     }
 
     return (
