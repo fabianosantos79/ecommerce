@@ -5,12 +5,15 @@ import AppContext from './AppContext'
 const Provider = ({ children }) => {
     const [products, setProducts] = useState([]);
     const [loadingSpin, setLoadSpin] = useState(true);
+    const [cartItens, setCartItens] = useState([]);
 
     const value = {
         products,
         setProducts,
         loadingSpin,
-        setLoadSpin
+        setLoadSpin,
+        cartItens,
+        setCartItens
     }
 
     return (

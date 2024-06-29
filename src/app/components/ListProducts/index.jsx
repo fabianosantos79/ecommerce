@@ -19,6 +19,10 @@ const ListProducts = () => {
         setLoadSpin(false);
     }, [])
 
+    const addItemCart = () => {
+        alert('Adiconado');
+    }
+
     return (
         (loadingSpin && <Loading />) || (
             <section className="container max-w-screen-xl w-full px-28 pt-6 flex flex-wrap gap-6">
@@ -36,7 +40,7 @@ const ListProducts = () => {
                                 currency: 'BRL'
                             })}</h3>
                         </CardFooter>
-                        <Button variant="link" className="absolute flex justify-center gap-6 w-14 h-14 right-0 top-80 "><FaCartPlus size={30} className="text-blue-600 botao-adicionar" />
+                        <Button variant="link" className="absolute flex justify-center gap-6 w-14 h-14 right-0 top-80 "><FaCartPlus size={30} className="text-blue-600 botao-adicionar" onClick={addItemCart} />
                         </Button>
                     </Card>)}
             </section>
