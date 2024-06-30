@@ -10,7 +10,7 @@ Projeto simulando o Mercado Livre, a aplicação consome a API da loja virtual o
 
 Fiz o layout baseado no frontend do Mercado Livre
 
-![App Referencia 1](https://raw.githubusercontent.com/fabianosantos79/projeto-app-tempo/main/public/referencia.png)
+![App Referencia 1](https://raw.githubusercontent.com/fabianosantos79/ecommerce/main/public/referencia.png)
 <br/>
 
 ## 🛠 Funcionalidades
