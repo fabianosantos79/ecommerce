@@ -22,9 +22,9 @@ const FormSearch = () => {
     }
 
     return (
-        <form className='flex h-14 w-full max-w-screen-md items-center py-10' onSubmit={handleInput}>
+        <form className='flex h-14 sm:w-3/5 max-w-screen-md items-center py-10' onSubmit={handleInput}>
             <input type="text" placeholder="Buscar produtos, marcas e muito mais..." className="bg-white outline-none border-none px-4 py-3 text-gray-900 text-lg rounded-2xl w-full" onChange={(event) => setSearchValue(event.target.value)} value={searchValue} />
-            <Button variant="link">
+            <Button variant="link" className="hidden lg:flex">
                 <IoSearchCircle size={57} className='text-white font-black' />
             </Button>
         </form>

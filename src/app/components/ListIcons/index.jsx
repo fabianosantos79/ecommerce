@@ -26,7 +26,7 @@ const ListIcons = () => {
     }
 
     return (
-        <div className="container max-w-screen-xl w-full px-28 flex flex-wrap justify-between gap-1 mt-4">
+        <div className="hidden container max-w-screen-xl w-full px-28 md:flex flex-wrap justify-between gap-1 mt-4">
 
             <Card className="w-1/5 h-28 cursor-pointer">
                 <CardHeader className="flex justify-center items-center text-gray-800">

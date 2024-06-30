@@ -12,7 +12,7 @@ const CardProduct = ({ product }) => {
     const addItemCart = () => setCartItens([...cartItens, product]);
 
     return (
-        <Card key={product.id} className="w-full max-w-60 relative card hover:shadow-2xl">
+        <Card key={product.id} className="sm:w-full sm:max-w-60 relative card hover:shadow-2xl">
             <CardTitle>
                 <img src={product.thumbnail.replace(/\w\.jpg/gi, "W.jpg")} className="w-96" />
             </CardTitle>
